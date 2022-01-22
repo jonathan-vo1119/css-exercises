@@ -13,10 +13,10 @@ body {
   color: white;
 
   display: flex;
+  align-items: center;
+  padding: 0 16px;
   font-size: 32px;
   font-weight: 900;
-  padding: 16px;
-  align-items: center;
 }
 
 .footer {
@@ -32,9 +32,10 @@ body {
 .sidebar {
   background: royalblue;
   
-  min-width: 300px;
-  font-size: 24px;
   padding: 16px;
+  /* min-width: 300px; */
+  /* font-size: 24px; */
+  flex-shrink: 0;
 }
 
 .card {
@@ -42,30 +43,38 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 
-  max-width: 200px;
-  padding: 15px;
+  /* max-width: 200px; */
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
 }
 
 /* My Selectors */
 .main-container {
-  display: flex;
   flex: 1;
+  display: flex;
 }
 
 .card-container {
+  padding: 32px;
   display: flex;
   flex-wrap: wrap;
-  padding: 32px;
-  gap: 16px;
+  
+  /* gap: 16px; */
 }
 
-.sidebar a {
-  text-decoration: none;
+a {
   color: white;
+  text-decoration: none;
+  font-size: 24px;
 }
 
 ul {
   list-style-type: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 16px;
 }
